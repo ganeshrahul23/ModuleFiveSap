@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <description>Sapient core library</description>
+    <display-name>Sapient core</display-name>
+    <tlib-version>1.2</tlib-version>
+    <short-name>sap</short-name>
+    <uri>http://java.sapient.com</uri>
+    
+    <tag>
+    	<name>display</name>
+    	<tag-class>com.sapient.tag.DisplayTag</tag-class>
+    	<body-content>scriptless</body-content>
+    </tag>
+    
+    <tag>
+    	<name>check</name>
+    	<tag-class>com.sapient.tag.CheckTag</tag-class>
+    	<body-content>scriptless</body-content>
+    	<attribute>
+    		<name>age</name>
+    		<required>true</required>
+    		<rtexprvalue>true</rtexprvalue>   		
+    	</attribute>
+    	<attribute>
+    		<name>var</name>
+    		<required>true</required>  		
+    	</attribute>
+    </tag>
+    
+    
+</taglib>
